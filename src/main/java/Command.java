@@ -15,12 +15,10 @@
  * limitations under the License.
  */
 
-public interface Elevator {
-
-    Command nextCommand();
-    void call(int floor, String to);
-    void go(int floorToGo);
-    void userHasEntered();
-    void userHasExited();
-    void reset(String cause);
+public enum Command {
+    UP,
+    DOWN,
+    OPEN,
+    CLOSE,
+    NOTHING
 }
